@@ -1,0 +1,35 @@
+{
+	"emulators": {
+		"default": {
+			"port": 3569,
+			"serviceAccount": "emulator-account"
+		}
+	},
+	"contracts": {
+		"EmuToken": "./contracts/EmuToken.cdc",
+		"EmuSwap": "./contracts/exchange/EmuSwap.cdc",
+		"StakingRewards": "./contracts/StakingRewards.cdc",
+		"xEmuToken" : "./contracts/xEmuToken.cdc"
+		
+	},
+	"networks": {
+		"emulator": "127.0.0.1:3569",
+		"mainnet": "access.mainnet.nodes.onflow.org:9000",
+		"testnet": "access.devnet.nodes.onflow.org:9000"
+	},
+	"accounts": {
+		"emulator-account": {
+			"address": "f8d6e0586b0a20c7",
+			"key": "996f4dd332ecbd9cbcd7e938b38fd61aaf4277450708b4293b9d93aa89e8881b"
+		},
+		"testnet-account": {
+			"address": "0xa82167f00f08b71d",
+			"key": "ca4d5ad30e0e08f7ba736efcdf6059bf3f632a89f01d01a068deae7065b2c58c"
+		}
+	},
+	"deployments": {
+		"testnet": {
+			"testnet-account":["EmuToken","EmuSwap","StakingRewards","xEmuToken"]
+		}
+	}
+}

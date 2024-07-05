@@ -1,0 +1,4 @@
+flow accounts add-contract EmuToken ./contracts/EmuToken.cdc --signer testnet-account --network testnet
+flow accounts add-contract EmuSwap ./contracts/exchange/EmuSwap.cdc --signer testnet-account --network testnet
+flow accounts add-contract xEmuToken ./contracts/xEmuToken.cdc --signer testnet-account --network testnet
+flow accounts add-contract StakingRewards ./contracts/StakingRewards.cdc --signer testnet-account --network testnet
